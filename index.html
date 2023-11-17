@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+<header class="header">
+    <nav class="navbar">
+        <span class="logo"><i class='bx bxl-firebase'></i></span>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="radio">
+        <label for="all">All</label>
+        <input type="radio" checked name="type" id="all">
+        <label for="search">Search</label>
+        <input type="radio" name="type" id="search">
+    </div>
+</header>
+
+
+<section class="title background">
+    <div class="container">
+        <div>
+            <h2 class="logo"><i class='bx bx-drink'></i>Coctails</h2>
+            <div class="content">
+                <div class="text-sci">
+                    <h2><span>Information</span></h2>
+                    <p>
+                        Кокте́йль (англ. cocktail) — напиток, получаемый смешиванием нескольких компонентов. Чаще всего
+                        коктейли представляют собой либо комбинацию спиртных напитков, либо один или несколько спиртных
+                        напитков, смешанных с другими ингредиентами, такими как фруктовый сок, ароматизированный сироп
+                        или
+                        сливки. Коктейли сильно различаются в разных регионах мира, и многие веб-сайты публикуют как
+                        оригинальные рецепты, так и свои собственные интерпретации старых и более известных коктейлей.
+
+                        Коктейли бывают алкогольные (в качестве одного или нескольких ингредиентов содержащие спиртные
+                        напитки) и безалкогольные.
+                    </p>
+
+                    <div class="social-icons">
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                    </div>
+                </div>
+                <div class="log-box">
+                    <img src="./assets/refreshing-cocktail-decorated-with-slice-lemon.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="search-wrapper hidden">
+    <input class="searchInput" type="text" id="searchInput" placeholder="   Search...">
+    <button class="btn-wrapper" id="submit">Search</button>
+
+    <div class="result hidden">
+        <img id="image" src="" alt="">
+        <p>Название: <span id="name"></span></p>
+        <p>Виды: <span id="kinds"></span></p>
+        <p>Инструкция: <span id="instruction"></span></p>
+        <img id="img" src="" alt="">
+
+    </div>
+</div>
+
+<div id="current-coctail"></div>
+
+
+<div class="row">
+</div>
+
+<script src="./script/script.js"></script>
+</body>
+</html>
